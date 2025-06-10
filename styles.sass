@@ -131,6 +131,9 @@ main
     width: 100%
     div
       @include anchoYlargo()
+      display: flex
+      position: relative
+      top: 0
       p
         color: black
         display: none
@@ -139,6 +142,8 @@ main
     div:hover
       border: solid 1px white
       p 
+        display: flex
+        position: absolute
         top: 40px
         right: 0
         background-color: #941313
@@ -172,7 +177,7 @@ main
       p
         display: none
   main
-    @include flex(column , center , center , 40px)
+    @include flex(column , space-around , center, 100px)
     .claseCartelera
       @include flex(column, center, center, 30px)
       .seccion-cartelera
