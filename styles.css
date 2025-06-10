@@ -285,6 +285,58 @@ main .proximosEstrenos div img {
   nav .segundaseccion-navbar p {
     display: none;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 97%;
+  }
+  main .claseCartelera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .seccion-cartelera {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+  }
+  main .clasePreventa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .clasePreventa .seccionPreventa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+  }
+  main .claseEstrenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .proximosEstrenos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
 @media only screen and (min-width: 600px) {
   .segundaseccion-navbar {
