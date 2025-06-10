@@ -124,6 +124,8 @@ main
     img
       @include anchoYlargo()
       border: 2px solid white
+  .peliculas
+    @include gridFila(repeat(3,1fr), space-around, space-around, 30px)
   .claseCartelera
     @include flex(column, center, center, 30px)
   .seccion-cartelera
@@ -151,6 +153,7 @@ main
         color: white
   .clasePreventa
     @include flex(column, center, center, 30px)
+    height: auto
     .seccionPreventa
       @include gridColumns (repeat(2,1fr) , space-around, space-around, 10px)
       width: 100%
@@ -160,6 +163,7 @@ main
           @include anchoYlargo()
   .claseEstrenos
     @include flex(column, center, center, 30px)
+    height: auto
   .proximosEstrenos
     @include gridColumns (repeat(2,1fr) , center, center, 10px)
     width: 100%
