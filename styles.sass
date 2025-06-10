@@ -179,22 +179,15 @@ main
       p
         display: none
   main
-    @include flex(column , space-around , center, 20px)
     .claseCartelera
-      @include flex(column, center, center, 30px)
       .seccion-cartelera
         @include gridColumns (repeat(2,1fr), center, center, 20px)
-        width: 100%
     .clasePreventa
-      @include flex(column, center, center, 30px)
       .seccionPreventa
         @include gridColumns (repeat(2,1fr), center, center, 20px)
-        width: 100%
     .claseEstrenos
-      @include flex(column, center, center, 30px)
       .proximosEstrenos
         @include gridColumns (repeat(2,1fr) , center, center, 10px)
-        width: 100%
 
 @media only screen and (min-width: 600px)
   .segundaseccion-navbar
@@ -204,22 +197,15 @@ main
         display: block
 
   main
-    @include flex(column , center , center , 40px )
     .claseCartelera
-      @include flex(column, center, center, 30px)
-    .seccion-cartelera
-      @include gridColumns (repeat(4,1fr), center, center, 20px)
-      width: 100%
+      .seccion-cartelera
+        @include gridColumns (repeat(4,1fr), center, center, 20px)
     .clasePreventa
-      @include flex(column, center, center, 30px)
       .seccionPreventa
         @include gridColumns (repeat(4,1fr), center, center, 20px)
-        width: 100%
     .claseEstrenos
-      @include flex(column, center, center, 30px)
-    .proximosEstrenos
+      .proximosEstrenos
       @include gridColumns (repeat(4,1fr) , center, center, 10px)
-    width: 100%
 
 @media only screen and (min-width: 768px) 
   nav
