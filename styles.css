@@ -194,7 +194,7 @@ main .seccion-cartelera {
   justify-items: center;
   align-items: center;
   gap: 10px;
-  width: 97%;
+  width: 100%;
 }
 main .seccion-cartelera div {
   width: 100%;
@@ -262,7 +262,7 @@ main .proximosEstrenos {
   justify-items: center;
   align-items: center;
   gap: 10px;
-  width: 97%;
+  width: 100%;
 }
 main .proximosEstrenos div {
   width: 100%;
@@ -291,7 +291,7 @@ main .proximosEstrenos div img {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 97%;
+    width: 100%;
   }
   main .claseCartelera {
     display: flex;
@@ -306,7 +306,7 @@ main .proximosEstrenos div img {
     justify-items: center;
     align-items: center;
     gap: 20px;
-    width: 97%;
+    width: 100%;
   }
   main .clasePreventa {
     display: flex;
@@ -321,7 +321,7 @@ main .proximosEstrenos div img {
     justify-items: center;
     align-items: center;
     gap: 20px;
-    width: 97%;
+    width: 100%;
   }
   main .claseEstrenos {
     display: flex;
@@ -345,7 +345,7 @@ main .proximosEstrenos div img {
     justify-items: center;
     align-items: center;
     gap: 0px;
-    width: 97%;
+    width: 100%;
   }
   .segundaseccion-navbar p {
     display: block;
@@ -356,7 +356,7 @@ main .proximosEstrenos div img {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 97%;
+    width: 100%;
   }
   main .claseCartelera {
     display: flex;
@@ -371,7 +371,7 @@ main .proximosEstrenos div img {
     justify-items: center;
     align-items: center;
     gap: 20px;
-    width: 97%;
+    width: 100%;
   }
   main .clasePreventa {
     display: flex;
@@ -386,7 +386,7 @@ main .proximosEstrenos div img {
     justify-items: center;
     align-items: center;
     gap: 20px;
-    width: 97%;
+    width: 100%;
   }
   main .claseEstrenos {
     display: flex;
