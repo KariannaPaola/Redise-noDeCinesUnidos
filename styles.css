@@ -237,7 +237,6 @@ main .clasePreventa {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  height: auto;
 }
 main .clasePreventa .seccionPreventa {
   display: grid;
@@ -261,7 +260,6 @@ main .claseEstrenos {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  height: auto;
 }
 main .proximosEstrenos {
   display: grid;
@@ -297,7 +295,7 @@ main .proximosEstrenos div img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 100px;
+    gap: 20px;
   }
   main .claseCartelera {
     display: flex;
