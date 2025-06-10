@@ -123,7 +123,9 @@ main
     img
       @include anchoYlargo()
       border: 2px solid white
-      
+  
+  .claseCartelera
+    @include flex(column, center, center, 30px)
   .seccion-cartelera
     @include gridColumns (repeat(2,1fr) , center, center, 10px)
     width: 97%
@@ -159,6 +161,8 @@ main
         @include anchoYlargo()
         img
           @include anchoYlargo()
+  .claseEstrenos
+    @include flex(column, center, center, 30px)
   .proximosEstrenos
     @include gridColumns (repeat(2,1fr) , center, center, 10px)
     width: 97%
@@ -185,7 +189,8 @@ main
 
   main
     @include flex(column , center , center , 40px )
-
+    .claseCartelera
+      @include flex(column, center, center, 30px)
     .seccion-cartelera
       @include gridColumns (repeat(4,1fr), center, center, 20px)
       width: 97%
@@ -194,6 +199,8 @@ main
       .seccionPreventa
         @include gridColumns (repeat(4,1fr), center, center, 20px)
         width: 97%
+    .claseEstrenos
+      @include flex(column, center, center, 30px)
     .proximosEstrenos
       @include gridColumns (repeat(4,1fr) , center, center, 10px)
     width: 97%
