@@ -150,13 +150,15 @@ main
         font-weight: bolder
         padding: 5px
         color: white
-  .seccionPreventa
-    @include gridColumns (repeat(2,1fr) , center, center, 10px)
-    width: 97%
-    div
-      @include anchoYlargo()
-      img
+  .clasePreventa
+    @include flex(column, center, center, 30px)
+    .seccionPreventa
+      @include gridColumns (repeat(2,1fr) , space-around, space-around, 10px)
+      width: 100%
+      div
         @include anchoYlargo()
+        img
+          @include anchoYlargo()
   .proximosEstrenos
     @include gridColumns (repeat(2,1fr) , center, center, 10px)
     width: 97%
@@ -187,9 +189,11 @@ main
     .seccion-cartelera
       @include gridColumns (repeat(4,1fr), center, center, 20px)
       width: 97%
-    .seccionPreventa
-      @include gridColumns (repeat(4,1fr), center, center, 20px)
-      width: 97%
+    .clasePreventa
+      @include flex(column, center, center, 30px)
+      .seccionPreventa
+        @include gridColumns (repeat(4,1fr), center, center, 20px)
+        width: 97%
     .proximosEstrenos
       @include gridColumns (repeat(4,1fr) , center, center, 10px)
     width: 97%

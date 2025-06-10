@@ -219,19 +219,26 @@ main .seccion-cartelera div:hover p {
   padding: 5px;
   color: white;
 }
-main .seccionPreventa {
+main .clasePreventa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main .clasePreventa .seccionPreventa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
+  justify-items: space-around;
+  align-items: space-around;
   gap: 10px;
-  width: 97%;
+  width: 100%;
 }
-main .seccionPreventa div {
+main .clasePreventa .seccionPreventa div {
   width: 100%;
   height: 100%;
 }
-main .seccionPreventa div img {
+main .clasePreventa .seccionPreventa div img {
   width: 100%;
   height: 100%;
 }
@@ -293,7 +300,14 @@ main .proximosEstrenos div img {
     gap: 20px;
     width: 97%;
   }
-  main .seccionPreventa {
+  main .clasePreventa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .clasePreventa .seccionPreventa {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
