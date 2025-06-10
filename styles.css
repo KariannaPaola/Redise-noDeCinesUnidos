@@ -291,7 +291,6 @@ main .proximosEstrenos div img {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 100%;
   }
   main .claseCartelera {
     display: flex;
@@ -300,7 +299,7 @@ main .proximosEstrenos div img {
     align-items: center;
     gap: 30px;
   }
-  main .seccion-cartelera {
+  main .claseCartelera .seccion-cartelera {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -330,12 +329,13 @@ main .proximosEstrenos div img {
     align-items: center;
     gap: 30px;
   }
-  main .proximosEstrenos {
+  main .claseEstrenos .proximosEstrenos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     gap: 10px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 600px) {
