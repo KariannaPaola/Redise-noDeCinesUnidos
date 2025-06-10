@@ -1,0 +1,207 @@
+@import ./componentes/_mixings
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap')
+
+*
+  padding: 0
+  margin: 0
+  font-family: "Space Grotesk", sans-serif
+
+body
+  background-image: url("./images/image.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  margin: 5px
+
+h2
+  color: white
+
+nav
+  position: sticky
+  top: 0
+  height: 90px
+  background-image: url("./images/image.jpg")
+  background-position: center
+  padding: 0px 0 10px 0
+  z-index: 10
+  @include flex(column, center, center, 10px )
+  .primeraseccion-navbar
+    @include gridColumns (60% 40%, start, center, 5px)
+    width: 97%
+    .iconos-derecha
+      width: 83%
+      @include flex (row, flex-end, center, 5px)
+      i
+        color: #941313
+      p
+      color: white
+      font-size: 14px
+      font-weight: bolder
+    #divlogo
+      width: 200px
+      #logo
+        width: 100%
+  .segundaseccion-navbar
+    @include gridColumns (repeat(6, 1fr), center, center, 10px)
+    width: 100%
+    div
+      @include flex(column , center , center , 5px )
+      width: 70px
+      height: 50px
+      p
+        color: white 
+        font-size: 11px
+        font-weight: 400
+      i
+        color: white
+    .iconos-segundaseccion:hover
+      background: #941313
+      border-radius: 10px
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+      backdrop-filter: blur(8.1px)
+      -webkit-backdrop-filter: blur(8.1px)
+      p
+        font-weight: bolder
+
+main
+  @include flex(column , center , center , 50px )
+  .Pelicula-cartelera
+    width: 100%
+    #portadaPelicula
+      width: 100%
+  .Segunda-seccion
+    @include flex (row, space-around, center, 20px )
+    width: 98%
+    height: 120px
+    background-image: url("./images/rolloo3.png")
+    background-position: center
+    padding: 10px 0 10px 0
+    div
+      width: 200px
+      height: 100px
+      border-left:  1px grey solid
+      border-right: 1px grey solid
+      p
+        color: white
+        font-size: 10px
+        font-weight: 900
+        text-align: center
+        position: relative
+        top: 35px
+    div:hover
+      p
+        display: none
+    #Primerdiv
+      background-image: url("./images/result10.jpg")
+      background-position: center
+    #Segundodiv
+      background-image: url("./images/result9.jpg")
+      background-position: center
+    #Tercerdiv
+      background-image: url("./images/result11.jpg")
+      background-position: center
+    #Cuartodiv
+      background-image: url("./images/result12.jpg")
+      background-position: center
+    #Quintodiv
+      background-image: url("./images/fx13.png")
+    #Primerdiv:hover
+      background-image: url("./images/result_cines.jpg")  
+      background-position: center
+    #Segundodiv:hover
+      background-image: url("./images/result_imagencotufas.jpg")
+    #Tercerdiv:hover
+      background-image: url("./images/result_imagenestrenos.jpg")
+      background-position: center
+    #Cuartodiv:hover
+      background-image: url("./images/result_imagenpago.jpg")
+      background-position: center
+    #Quintodiv:hover
+      background-image: url("./images/result_club.png")
+      background-position: center   
+    img
+      @include anchoYlargo()
+      border: 2px solid white
+      
+  .seccion-cartelera
+    @include gridColumns (repeat(2,1fr) , center, center, 10px)
+    width: 97%
+    div
+      @include anchoYlargo()
+      display: flex
+      position: relative
+      top: 0
+      padding: 5px
+      p
+        color: black
+        display: none
+    img
+      @include anchoYlargo()
+    div:hover
+      border: solid 1px white
+      padding: 5px
+      p
+        display: flex
+        position: absolute
+        top: 40px
+        right: 0
+        background-color: #941313
+        font-weight: bolder
+        padding: 5px
+        color: white
+  .seccionPreventa
+    @include gridColumns (repeat(2,1fr) , center, center, 10px)
+    width: 97%
+    div
+      @include anchoYlargo()
+      img
+        @include anchoYlargo()
+  .proximosEstrenos
+    @include gridColumns (repeat(2,1fr) , center, center, 10px)
+    width: 97%
+    div
+      @include anchoYlargo()
+      img
+        @include anchoYlargo()
+
+
+@media only screen and (max-width: 600px)
+
+@media only screen and (min-width: 600px)
+  main
+    @include flex(column , center , center , 40px )
+
+    .seccion-cartelera
+      @include gridColumns (repeat(4,1fr), center, center, 20px)
+      width: 97%
+    .seccionPreventa
+      @include gridColumns (repeat(4,1fr), center, center, 20px)
+      width: 97%
+    .proximosEstrenos
+      @include gridColumns (repeat(4,1fr) , center, center, 10px)
+    width: 97%
+
+@media only screen and (min-width: 768px) 
+  nav
+    .segundaseccion-navbar
+      div
+        p
+          display: inline
+          color: white
+  main
+    @include flex(column , center , center , 40px )
+    .Segunda-seccion
+      div
+        p
+          font-size: 14px
+
+@media only screen and (min-width: 992px) 
+  
+@media only screen and (min-width: 1200px) 
+
+
+
+
+
+
+

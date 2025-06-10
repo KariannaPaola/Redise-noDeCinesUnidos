@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-image: url("./images/image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+
+h2 {
+  color: white;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 90px;
+  background-image: url("./images/image.jpg");
+  background-position: center;
+  padding: 0px 0 10px 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .primeraseccion-navbar {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-items: start;
+  align-items: center;
+  gap: 5px;
+  width: 97%;
+}
+nav .primeraseccion-navbar .iconos-derecha {
+  width: 83%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+}
+nav .primeraseccion-navbar .iconos-derecha i {
+  color: #941313;
+}
+nav .primeraseccion-navbar #divlogo {
+  width: 200px;
+}
+nav .primeraseccion-navbar #divlogo #logo {
+  width: 100%;
+}
+nav .segundaseccion-navbar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+nav .segundaseccion-navbar div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 70px;
+  height: 50px;
+}
+nav .segundaseccion-navbar div p {
+  color: white;
+  font-size: 11px;
+  font-weight: 400;
+}
+nav .segundaseccion-navbar div i {
+  color: white;
+}
+nav .segundaseccion-navbar .iconos-segundaseccion:hover {
+  background: #941313;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+}
+nav .segundaseccion-navbar .iconos-segundaseccion:hover p {
+  font-weight: bolder;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+main .Pelicula-cartelera {
+  width: 100%;
+}
+main .Pelicula-cartelera #portadaPelicula {
+  width: 100%;
+}
+main .Segunda-seccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 98%;
+  height: 120px;
+  background-image: url("./images/rolloo3.png");
+  background-position: center;
+  padding: 10px 0 10px 0;
+}
+main .Segunda-seccion div {
+  width: 200px;
+  height: 100px;
+  border-left: 1px grey solid;
+  border-right: 1px grey solid;
+}
+main .Segunda-seccion div p {
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  top: 35px;
+}
+main .Segunda-seccion div:hover p {
+  display: none;
+}
+main .Segunda-seccion #Primerdiv {
+  background-image: url("./images/result10.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Segundodiv {
+  background-image: url("./images/result9.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Tercerdiv {
+  background-image: url("./images/result11.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Cuartodiv {
+  background-image: url("./images/result12.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Quintodiv {
+  background-image: url("./images/fx13.png");
+}
+main .Segunda-seccion #Primerdiv:hover {
+  background-image: url("./images/result_cines.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Segundodiv:hover {
+  background-image: url("./images/result_imagencotufas.jpg");
+}
+main .Segunda-seccion #Tercerdiv:hover {
+  background-image: url("./images/result_imagenestrenos.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Cuartodiv:hover {
+  background-image: url("./images/result_imagenpago.jpg");
+  background-position: center;
+}
+main .Segunda-seccion #Quintodiv:hover {
+  background-image: url("./images/result_club.png");
+  background-position: center;
+}
+main .Segunda-seccion img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+main .seccion-cartelera {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 97%;
+}
+main .seccion-cartelera div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 0;
+  padding: 5px;
+}
+main .seccion-cartelera div p {
+  color: black;
+  display: none;
+}
+main .seccion-cartelera img {
+  width: 100%;
+  height: 100%;
+}
+main .seccion-cartelera div:hover {
+  border: solid 1px white;
+  padding: 5px;
+}
+main .seccion-cartelera div:hover p {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #941313;
+  font-weight: bolder;
+  padding: 5px;
+  color: white;
+}
+main .seccionPreventa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 97%;
+}
+main .seccionPreventa div {
+  width: 100%;
+  height: 100%;
+}
+main .seccionPreventa div img {
+  width: 100%;
+  height: 100%;
+}
+main .proximosEstrenos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 97%;
+}
+main .proximosEstrenos div {
+  width: 100%;
+  height: 100%;
+}
+main .proximosEstrenos div img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 97%;
+  }
+  main .seccion-cartelera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+  }
+  main .seccionPreventa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+  }
+  main .proximosEstrenos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  nav .segundaseccion-navbar div p {
+    display: inline;
+    color: white;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  main .Segunda-seccion div p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=styles.css.map */
