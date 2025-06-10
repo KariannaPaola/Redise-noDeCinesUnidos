@@ -203,7 +203,6 @@ main .seccion-cartelera div {
   display: flex;
   position: relative;
   top: 0;
-  padding: 5px;
 }
 main .seccion-cartelera div p {
   color: black;
@@ -215,7 +214,6 @@ main .seccion-cartelera img {
 }
 main .seccion-cartelera div:hover {
   border: solid 1px white;
-  padding: 5px;
 }
 main .seccion-cartelera div:hover p {
   display: flex;
@@ -224,7 +222,6 @@ main .seccion-cartelera div:hover p {
   right: 0;
   background-color: #941313;
   font-weight: bolder;
-  padding: 5px;
   color: white;
 }
 main .clasePreventa {
