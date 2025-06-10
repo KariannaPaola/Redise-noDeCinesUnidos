@@ -279,14 +279,6 @@ main .proximosEstrenos div img {
 }
 
 @media only screen and (max-width: 600px) {
-  nav .segundaseccion-navbar {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 0px;
-    width: 97%;
-  }
   nav .segundaseccion-navbar p {
     display: none;
   }
