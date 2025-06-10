@@ -335,9 +335,6 @@ main .proximosEstrenos div img {
     gap: 10px;
     width: 100%;
   }
-  main img {
-    height: 49%;
-  }
 }
 @media only screen and (min-width: 600px) {
   .segundaseccion-navbar {
