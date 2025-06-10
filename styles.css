@@ -179,7 +179,7 @@ main .Segunda-seccion #Quintodiv:hover {
 }
 main .Segunda-seccion img {
   width: 100%;
-  height: 95%;
+  height: 100%;
   border: 2px solid white;
 }
 main .claseCartelera {
@@ -199,7 +199,7 @@ main .seccion-cartelera {
 }
 main .seccion-cartelera div {
   width: 100%;
-  height: 95%;
+  height: 100%;
   display: flex;
   position: relative;
   top: 0;
@@ -210,7 +210,7 @@ main .seccion-cartelera div p {
 }
 main .seccion-cartelera img {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 main .seccion-cartelera div:hover {
   border: solid 1px white;
@@ -241,11 +241,11 @@ main .clasePreventa .seccionPreventa {
 }
 main .clasePreventa .seccionPreventa div {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 main .clasePreventa .seccionPreventa div img {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 main .claseEstrenos {
   display: flex;
@@ -264,11 +264,11 @@ main .proximosEstrenos {
 }
 main .proximosEstrenos div {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 main .proximosEstrenos div img {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -334,6 +334,9 @@ main .proximosEstrenos div img {
     align-items: center;
     gap: 10px;
     width: 100%;
+  }
+  main img {
+    height: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
