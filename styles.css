@@ -90,6 +90,9 @@ nav .segundaseccion-navbar div p {
 nav .segundaseccion-navbar div i {
   color: white;
 }
+nav .segundaseccion-navbar .iconos-segundaseccion {
+  transition: all 350ms;
+}
 nav .segundaseccion-navbar .iconos-segundaseccion:hover {
   background: #941313;
   border-radius: 10px;
@@ -146,21 +149,26 @@ main .Segunda-seccion div:hover p {
 main .Segunda-seccion #Primerdiv {
   background-image: url("./images/result10.jpg");
   background-position: center;
+  transition: all 350ms ease;
 }
 main .Segunda-seccion #Segundodiv {
   background-image: url("./images/result9.jpg");
   background-position: center;
+  transition: all 350ms ease;
 }
 main .Segunda-seccion #Tercerdiv {
   background-image: url("./images/result11.jpg");
   background-position: center;
+  transition: all 350ms ease;
 }
 main .Segunda-seccion #Cuartodiv {
   background-image: url("./images/result12.jpg");
   background-position: center;
+  transition: all 350ms ease;
 }
 main .Segunda-seccion #Quintodiv {
   background-image: url("./images/fx13.png");
+  transition: all 350ms ease;
 }
 main .Segunda-seccion #Primerdiv:hover {
   background-image: url("./images/result_cines.jpg");
@@ -191,7 +199,7 @@ main .peliculas {
   grid-template-rows: repeat(3, 1fr);
   justify-content: space-around;
   align-items: space-around;
-  gap: 30px;
+  gap: 70px;
 }
 main .claseCartelera {
   display: flex;
@@ -214,6 +222,7 @@ main .seccion-cartelera div {
   display: flex;
   position: relative;
   top: 0;
+  transition: transform 350ms;
 }
 main .seccion-cartelera div p {
   color: black;
@@ -225,6 +234,7 @@ main .seccion-cartelera img {
 }
 main .seccion-cartelera div:hover {
   border: solid 1px white;
+  transform: scale(0.9);
 }
 main .seccion-cartelera div:hover p {
   display: flex;
@@ -253,10 +263,23 @@ main .clasePreventa .seccionPreventa {
 main .clasePreventa .seccionPreventa div {
   width: 100%;
   height: 100%;
+  transition: transform 350ms;
 }
 main .clasePreventa .seccionPreventa div img {
   width: 100%;
   height: 100%;
+}
+main .clasePreventa .seccionPreventa div p {
+  display: none;
+}
+main .clasePreventa .seccionPreventa div:hover {
+  transform: scale(0.9);
+}
+main .clasePreventa .seccionPreventa div:hover p {
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 }
 main .claseEstrenos {
   display: flex;
@@ -276,10 +299,23 @@ main .proximosEstrenos {
 main .proximosEstrenos div {
   width: 100%;
   height: 100%;
+  transition: transform 350ms;
+}
+main .proximosEstrenos div p {
+  display: none;
 }
 main .proximosEstrenos div img {
   width: 100%;
   height: 100%;
+}
+main .proximosEstrenos div:hover {
+  transform: scale(0.9);
+}
+main .proximosEstrenos div:hover p {
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
