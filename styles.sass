@@ -4,7 +4,7 @@
 *
   padding: 0
   margin: 0
-  font-family: "Space Grotesk", sans-serif
+  font-family: "Roboto", sans-serif
 
 body
   background-image: url("./images/image.jpg")
@@ -43,9 +43,13 @@ nav
       width: 200px
       #logo
         width: 100%
+  .icono-barraMovil
+    i
+      color: white
   .segundaseccion-navbar
     @include gridColumns (repeat(6, 1fr), center, center, 10px)
     width: 97%
+    display: none
     div
       @include flex(column , center , center , 5px )
       width: 70px
@@ -173,6 +177,9 @@ main
 
 @media only screen and (max-width: 600px)
   nav
+    .icono-barraMovil
+      width: 86%
+      @include flex(row, flex-end, center, 0)
     .segundaseccion-navbar
       p
         display: none
@@ -188,9 +195,12 @@ main
         @include gridColumns (repeat(2,1fr) , center, center, 10px)
 
 @media only screen and (min-width: 600px)
-  .segundaseccion-navbar
-      @include gridColumns (repeat(6, 1fr), center, center, 0px)
-      width: 100%
+  nav
+    .icono-barraMovil
+      display: none
+    .segundaseccion-navbar
+      @include gridColumns (repeat(6, 1fr), center, center, 10px)
+      width: 97%
       p
         display: block
 
@@ -203,7 +213,7 @@ main
         @include gridColumns (repeat(4,1fr), center, center, 20px)
     .claseEstrenos
       .proximosEstrenos
-      @include gridColumns (repeat(4,1fr) , center, center, 10px)
+        @include gridColumns (repeat(4,1fr) , center, center, 10px)
 
 @media only screen and (min-width: 768px) 
   nav
