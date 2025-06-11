@@ -46,7 +46,6 @@ nav
   .icono-barraMovil
     i
       color: white
-      cursor: pointer
   .segundaseccion-navbar
     @include gridColumns (repeat(6, 1fr), center, center, 10px)
     width: 97%
@@ -63,7 +62,6 @@ nav
         color: white
     .iconos-segundaseccion
       transition: all 350ms 
-      cursor: pointer
     .iconos-segundaseccion:hover
       background: #941313
       border-radius: 10px
@@ -74,7 +72,7 @@ nav
         font-weight: bolder
 
 main
-  @include flex(column , center , center , 50px )
+  @include flex(column , center , center , 90px )
   .Pelicula-cartelera
     width: 100%
     #portadaPelicula
@@ -91,7 +89,6 @@ main
       height: 100px
       border-left:  1px grey solid
       border-right: 1px grey solid
-      cursor: pointer
       p
         color: white
         font-size: 10px
@@ -151,7 +148,6 @@ main
       position: relative
       top: 0
       transition: transform 350ms
-      cursor: pointer
       p
         color: black
         display: none
@@ -159,7 +155,7 @@ main
       @include anchoYlargo()  
     div:hover
       border: solid 1px white
-      transform: scale(0.9)
+      transform: scale(0.7)
       p 
         display: flex
         position: absolute
@@ -176,13 +172,12 @@ main
       div
         @include anchoYlargo()
         transition: transform 350ms
-        cursor: pointer
         img
           @include anchoYlargo()
         p
           display: none
       div:hover
-        transform: scale(0.9)
+        transform: scale(0.7)
         p
           display: inline
           font-size: 18px
@@ -198,7 +193,6 @@ main
       p
         display: none
         transition: transform 350ms
-        cursor: pointer
       img
         @include anchoYlargo()
     div:hover
