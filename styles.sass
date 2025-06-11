@@ -46,6 +46,7 @@ nav
   .icono-barraMovil
     i
       color: white
+      cursor: pointer
   .segundaseccion-navbar
     @include gridColumns (repeat(6, 1fr), center, center, 10px)
     width: 97%
@@ -62,6 +63,7 @@ nav
         color: white
     .iconos-segundaseccion
       transition: all 350ms 
+      cursor: pointer
     .iconos-segundaseccion:hover
       background: #941313
       border-radius: 10px
@@ -89,6 +91,7 @@ main
       height: 100px
       border-left:  1px grey solid
       border-right: 1px grey solid
+      cursor: pointer
       p
         color: white
         font-size: 10px
@@ -148,6 +151,7 @@ main
       position: relative
       top: 0
       transition: transform 350ms
+      cursor: pointer
       p
         color: black
         display: none
@@ -172,6 +176,7 @@ main
       div
         @include anchoYlargo()
         transition: transform 350ms
+        cursor: pointer
         img
           @include anchoYlargo()
         p
@@ -192,7 +197,8 @@ main
       @include anchoYlargo()
       p
         display: none
-      transition: transform 350ms
+        transition: transform 350ms
+        cursor: pointer
       img
         @include anchoYlargo()
     div:hover
