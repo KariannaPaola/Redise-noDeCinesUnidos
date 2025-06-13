@@ -11,11 +11,76 @@ body {
   background-position: center;
   background-size: cover;
   height: 100%;
-  margin: 5px;
 }
 
 h2 {
   color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+footer div {
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-size: 12px;
+}
+footer i {
+  color: white;
+}
+footer .PrimeraSeccion-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .PrimeraSeccion-footer #IconosFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+footer .PrimeraSeccion-footer #IconosFooter div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  width: 80px;
+  padding: 5px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+footer .PrimeraSeccion-footer #IconosFooter div p {
+  font-size: 10px;
+}
+footer .SegundaSeccion-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+footer .SegundaSeccion-footer #Iconos-socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  width: 70px;
+  height: 70px;
 }
 
 nav {
@@ -42,6 +107,7 @@ nav .primeraseccion-navbar {
   width: 97%;
 }
 nav .primeraseccion-navbar .iconos-derecha {
+  cursor: pointer;
   width: 83%;
   display: flex;
   flex-direction: row;
@@ -54,6 +120,7 @@ nav .primeraseccion-navbar .iconos-derecha {
 }
 nav .primeraseccion-navbar .iconos-derecha i {
   color: #941313;
+  cursor: pointer;
 }
 nav .primeraseccion-navbar #divlogo {
   width: 200px;
@@ -63,6 +130,7 @@ nav .primeraseccion-navbar #divlogo #logo {
 }
 nav .icono-barraMovil i {
   color: white;
+  cursor: pointer;
 }
 nav .segundaseccion-navbar {
   display: grid;
@@ -81,6 +149,7 @@ nav .segundaseccion-navbar div {
   gap: 5px;
   width: 70px;
   height: 50px;
+  cursor: pointer;
 }
 nav .segundaseccion-navbar div p {
   color: white;
@@ -109,7 +178,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 90px;
 }
 main .Pelicula-cartelera {
   width: 100%;
@@ -134,6 +203,7 @@ main .Segunda-seccion div {
   height: 100px;
   border-left: 1px grey solid;
   border-right: 1px grey solid;
+  cursor: pointer;
 }
 main .Segunda-seccion div p {
   color: white;
@@ -206,7 +276,7 @@ main .claseCartelera {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 main .seccion-cartelera {
   display: grid;
@@ -223,6 +293,7 @@ main .seccion-cartelera div {
   position: relative;
   top: 0;
   transition: transform 350ms;
+  cursor: pointer;
 }
 main .seccion-cartelera div p {
   color: black;
@@ -250,7 +321,7 @@ main .clasePreventa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 main .clasePreventa .seccionPreventa {
   display: grid;
@@ -263,7 +334,6 @@ main .clasePreventa .seccionPreventa {
 main .clasePreventa .seccionPreventa div {
   width: 100%;
   height: 100%;
-  transition: transform 350ms;
 }
 main .clasePreventa .seccionPreventa div img {
   width: 100%;
@@ -271,9 +341,6 @@ main .clasePreventa .seccionPreventa div img {
 }
 main .clasePreventa .seccionPreventa div p {
   display: none;
-}
-main .clasePreventa .seccionPreventa div:hover {
-  transform: scale(0.9);
 }
 main .clasePreventa .seccionPreventa div:hover p {
   display: inline;
@@ -286,7 +353,8 @@ main .claseEstrenos {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+  padding-bottom: 50px;
 }
 main .proximosEstrenos {
   display: grid;
@@ -299,7 +367,6 @@ main .proximosEstrenos {
 main .proximosEstrenos div {
   width: 100%;
   height: 100%;
-  transition: transform 350ms;
 }
 main .proximosEstrenos div p {
   display: none;
@@ -307,9 +374,6 @@ main .proximosEstrenos div p {
 main .proximosEstrenos div img {
   width: 100%;
   height: 100%;
-}
-main .proximosEstrenos div:hover {
-  transform: scale(0.9);
 }
 main .proximosEstrenos div:hover p {
   display: inline;
@@ -384,6 +448,29 @@ main .proximosEstrenos div:hover p {
   main .claseEstrenos .proximosEstrenos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .PrimeraSeccion-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .SegundaSeccion-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
     justify-items: center;
     align-items: center;
     gap: 10px;
