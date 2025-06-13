@@ -2,37 +2,6 @@
 @import ./componentes/_mixings
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap')
 
-
-footer
-  @include flex(column, center, flex-start, 20px)
-  padding: 20px
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)
-  div
-    width: 100%
-  p
-    color: $color-primario
-    font-size: 12px
-  i
-    color: white
-  .PrimeraSeccion-footer
-    @include flex(column, center, center, 20px)
-    #IconosFooter
-      @include flex(column, center, start, 5px)
-      div
-        @include flex(row, start, center,5px)
-        border: 1px solid grey
-        border-radius: 20px
-        width: 80px
-        padding: 5px
-        flex-wrap: nowrap
-        white-space: nowrap
-        p
-          font-size: 10px
-  .SegundaSeccion-footer
-    @include flex(column, center, start, 5px)
-    #Iconos-socialMedia
-      @include flex(row, end, center,5px)
-
 nav 
   position: sticky
   top: 0
@@ -172,7 +141,6 @@ main
       transition: transform 350ms
       cursor: pointer
       p
-        color: black
         display: none
     img
       @include anchoYlargo()  
@@ -194,6 +162,7 @@ main
       width: 100%
       div
         @include anchoYlargo()
+        cursor: pointer
         img
           @include anchoYlargo()
         p
@@ -212,6 +181,7 @@ main
     width: 100%
     div
       @include anchoYlargo()
+      cursor: pointer
       p
         display: none
       img
@@ -222,14 +192,43 @@ main
         font-size: 14px
         font-weight: 400
         color: $color-primario
+  
+footer
+  @include flex(column, center, flex-start, 20px)
+  padding: 20px
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)
+  div
+    width: 100%
+    p
+      color: $color-primario
+      font-size: 12px
+      cursor: pointer
+    i
+      color: white
+      cursor: pointer
+  .PrimeraSeccion-footer
+    @include flex(column, center, center, 20px)
+    #IconosFooter
+      @include flex(column, center, start, 5px)
+      div
+        @include flex(row, start, center,5px)
+        border: 1px solid grey
+        border-radius: 20px
+        width: 80px
+        padding: 5px
+        flex-wrap: nowrap
+        white-space: nowrap
+  .SegundaSeccion-footer
+    @include flex(column, center, start, 5px)
+    #Iconos-socialMedia
+      @include flex(row, end, center,5px)
 
 
 @media only screen and (max-width: 600px)
   nav
     .icono-barraMovil
       width: 86%
-      @include flex(row, flex-end, center, 0)
-      
+      @include flex(row, flex-end, center, 0)     
   main
     .claseCartelera
       .seccion-cartelera
