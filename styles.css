@@ -20,10 +20,10 @@ h2 {
 nav {
   position: sticky;
   top: 0;
-  height: 90px;
+  height: 60px;
   background-image: url("./images/image.jpg");
   background-position: center;
-  padding: 0px 0 10px 0;
+  padding: 20px 0 20px 0;
   z-index: 10;
   width: 100%;
   display: flex;
@@ -205,6 +205,7 @@ main .peliculas {
   justify-content: center;
   align-items: space-around;
   gap: 40px;
+  padding: 15px;
 }
 main .claseCartelera {
   display: flex;
@@ -269,6 +270,9 @@ main .clasePreventa .seccionPreventa div {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  transition: transform 350ms;
+  display: flex;
+  position: relative;
 }
 main .clasePreventa .seccionPreventa div img {
   width: 100%;
@@ -277,11 +281,19 @@ main .clasePreventa .seccionPreventa div img {
 main .clasePreventa .seccionPreventa div p {
   display: none;
 }
+main .clasePreventa .seccionPreventa div:hover {
+  transform: scale(0.9);
+}
 main .clasePreventa .seccionPreventa div:hover p {
-  display: inline;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  font-weight: bolder;
+  color: black;
   font-size: 14px;
-  font-weight: 400;
-  color: white;
 }
 main .claseEstrenos {
   display: flex;
@@ -303,6 +315,9 @@ main .proximosEstrenos div {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  transition: transform 350ms;
+  display: flex;
+  position: relative;
 }
 main .proximosEstrenos div p {
   display: none;
@@ -311,11 +326,19 @@ main .proximosEstrenos div img {
   width: 100%;
   height: 100%;
 }
+main .proximosEstrenos div:hover {
+  transform: scale(0.9);
+}
 main .proximosEstrenos div:hover p {
-  display: inline;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  font-weight: bolder;
+  color: black;
   font-size: 14px;
-  font-weight: 400;
-  color: white;
 }
 
 footer {
@@ -325,7 +348,8 @@ footer {
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+  background: #bf1717;
+  background: linear-gradient(90deg, rgb(191, 23, 23) 0%, rgb(184, 46, 46) 27%, rgb(13, 13, 13) 98%);
 }
 footer div {
   width: 100%;
@@ -362,7 +386,7 @@ footer .PrimeraSeccion-footer #IconosFooter div {
   border: 1px solid grey;
   border-radius: 20px;
   width: 80px;
-  padding: 5px;
+  padding: 10px;
   flex-wrap: nowrap;
   white-space: nowrap;
 }

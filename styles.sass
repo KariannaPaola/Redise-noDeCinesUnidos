@@ -5,10 +5,10 @@
 nav 
   position: sticky
   top: 0
-  height: 90px
+  height: 60px
   background-image: url("./images/image.jpg")
   background-position: center
-  padding: 0px 0 10px 0
+  padding: 20px 0 20px 0
   z-index: 10
   width: 100%
   @include flex(column, center, center, 10px )
@@ -128,6 +128,7 @@ main
       border: 2px solid white
   .peliculas
     @include gridFila(repeat(3,1fr), center, space-around, 40px)
+    padding: 15px
   .claseCartelera
     @include flex(column, center, center, 40px)  
   .seccion-cartelera
@@ -163,16 +164,27 @@ main
       div
         @include anchoYlargo()
         cursor: pointer
+        transition: transform 350ms
+        display: flex
+        position: relative
         img
           @include anchoYlargo()
         p
           display: none
       div:hover
+        transform: scale(0.9)
         p
-          display: inline
+          display: flex
+          position: absolute
+          top: 40px
+          right: 0
+          background-color: $color-primario
+          padding: 10px
+          font-weight: bolder
+          color: black
           font-size: 14px
-          font-weight: 400
-          color: $color-primario
+      
+        
   .claseEstrenos
     @include flex(column, center, center, 40px)
     padding-bottom: 50px
@@ -182,21 +194,31 @@ main
     div
       @include anchoYlargo()
       cursor: pointer
+      transition: transform 350ms
+      display: flex
+      position: relative
       p
         display: none
       img
         @include anchoYlargo()
     div:hover
+      transform: scale(0.9)
       p
-        display: inline
+        display: flex
+        position: absolute
+        top: 40px
+        right: 0
+        background-color: $color-primario
+        padding: 10px
+        font-weight: bolder
+        color: black
         font-size: 14px
-        font-weight: 400
-        color: $color-primario
-  
+
 footer
   @include flex(column, center, flex-start, 20px)
   padding: 20px
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)
+  background: #bf1717
+  background: linear-gradient(90deg,rgba(191, 23, 23, 1) 0%, rgba(184, 46, 46, 1) 27%, rgba(13, 13, 13, 1) 98%)
   div
     width: 100%
     p
@@ -215,7 +237,7 @@ footer
         border: 1px solid grey
         border-radius: 20px
         width: 80px
-        padding: 5px
+        padding: 10px
         flex-wrap: nowrap
         white-space: nowrap
   .SegundaSeccion-footer
@@ -283,10 +305,6 @@ footer
       div
         p
           font-size: 14px
-
-@media only screen and (min-width: 992px) 
-  
-@media only screen and (min-width: 1200px) 
 
 
 
